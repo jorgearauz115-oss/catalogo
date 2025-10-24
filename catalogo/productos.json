@@ -1,0 +1,5 @@
+[
+  { "nombre": "Laptop Gamer", "precio": 3500, "imagen": "img/laptop.jpg" },
+  { "nombre": "Mouse Mecánico", "precio": 150, "imagen": "img/mouse.jpg" },
+  { "nombre": "Teclado RGB", "precio": 200, "imagen": "img/teclado.jpg" }
+]
