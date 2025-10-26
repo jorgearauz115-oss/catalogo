@@ -2,6 +2,8 @@
 const categorias = [
     { nombre: "Periféricos", link: "perifericos/index.html" },
     { nombre: "Procesadores", link: "procesadores/index.html" }
+    { nombre: "Laptops", link: "laptops/index.html" }
+
 ];
 
 // Insertar automáticamente en el HTML
