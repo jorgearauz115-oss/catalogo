@@ -3,13 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Laptops</title>
+<title>Laptops - JorTech</title>
 <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+
 <header>
-    <h1>Laptops disponibles</h1>
+    <h1>Laptops</h1>
+    <a class="btn-volver" href="../index.html">⬅ Volver</a>
 </header>
+
+<section id="productos" class="productos"></section>
+
+<script>
+fetch('productos.json')
+    .then(response => response.json())
+    .then(data => {
+        const contenedor = document.getElementById('productos');
+
+        data.forEach(prod => {
+            const card = document.createElement('div');
+            card.classList.add('producto-card');
+
+            card.innerHTML = `
+                <img src="${prod.imagen}" alt="${prod.nombre}">
+                <h3>${prod.nombre}</h3>
+                <p>$${prod.precio}</p>
+            `;
+
+            contenedor.appendChild(card);
+        });
+    });
+</script>
+
 </body>
 </html>
-
