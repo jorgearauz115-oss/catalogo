@@ -1,0 +1,18 @@
+[
+  {
+    "nombre": "Mouse Gamer",
+    "precio": 60,
+    "stock": 5,
+    "descripcion": "Mouse gamer RGB 7200 DPI",
+    "imagen": "../img/mouse.jpg",
+    "whatsapp": "https://wa.me/591XXXXXXXX?text=Hola%20estoy%20interesado%20en%20el%20Mouse%20Gamer"
+  },
+  {
+    "nombre": "Teclado Mecánico",
+    "precio": 150,
+    "stock": 2,
+    "descripcion": "Teclado mecánico retroiluminado",
+    "imagen": "../img/teclado.png",
+    "whatsapp": "https://wa.me/591XXXXXXXX?text=Hola%20estoy%20interesado%20en%20el%20Teclado%20Mecánico"
+  }
+]
