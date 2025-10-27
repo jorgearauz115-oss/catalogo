@@ -1,1 +1,13 @@
+[
+    {
+        "nombre": "Laptop Lenovo i5",
+        "precio": 450,
+        "imagen": "../img/laptop.jpg"
+    },
+    {
+        "nombre": "Laptop Gamer RTX",
+        "precio": 1200,
+        "imagen": "../img/laptop.jpg"
+    }
+]
 
