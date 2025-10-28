@@ -1,13 +1,14 @@
 [
-    {
-        "nombre": "Laptop Lenovo i5",
-        "precio": 450,
-        "imagen": "../img/laptop.jpg"
-    },
-    {
-        "nombre": "Laptop Gamer RTX",
-        "precio": 1200,
-        "imagen": "../img/laptop.jpg"
-    }
+  {
+    "nombre": "Laptop HP",
+    "descripcion": "Laptop de 14 pulgadas con Windows 11",
+    "precio": 550,
+    "imagen": "laptop.jpg"
+  },
+  {
+    "nombre": "Laptop Lenovo",
+    "descripcion": "Laptop ideal para trabajo y estudio",
+    "precio": 620,
+    "imagen": "laptop.jpg"
+  }
 ]
-
