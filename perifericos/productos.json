@@ -1,18 +1,14 @@
 [
   {
     "nombre": "Mouse Gamer",
-    "precio": 60,
-    "stock": 5,
-    "descripcion": "Mouse gamer RGB 7200 DPI",
-    "imagen": "../img/mouse.jpg",
-    "whatsapp": "https://wa.me/591XXXXXXXX?text=Hola%20estoy%20interesado%20en%20el%20Mouse%20Gamer"
+    "descripcion": "Mouse RGB con 6 botones",
+    "precio": 18,
+    "imagen": "mouse.jpg"
   },
   {
     "nombre": "Teclado Mecánico",
-    "precio": 150,
-    "stock": 2,
-    "descripcion": "Teclado mecánico retroiluminado",
-    "imagen": "../img/teclado.png",
-    "whatsapp": "https://wa.me/59174937538?text=Hola%20estoy%20interesado%20en%20el%20Teclado%20Mecánico"
+    "descripcion": "Teclado con switches rojos",
+    "precio": 35,
+    "imagen": "teclado.png"
   }
 ]
