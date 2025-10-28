@@ -1,23 +1,22 @@
-fetch('productos.json')
-  .then(response => response.json())
-  .then(productos => {
-    const contenedor = document.querySelector(".contenedor-productos");
+document.addEventListener("DOMContentLoaded", () => {
+    const contenedor = document.getElementById("productos");
 
-    productos.forEach(producto => {
-      const card = document.createElement("div");
-      card.className = "producto-card";
+    fetch("productos.json")
+        .then(res => res.json())
+        .then(data => {
+            data.forEach(producto => {
+                const div = document.createElement("div");
+                div.classList.add("producto");
 
-      card.innerHTML = `
-        <img src="${producto.imagen}" alt="${producto.nombre}">
-        <h3>${producto.nombre}</h3>
-        <p>${producto.descripcion}</p>
-        <span class="precio">Bs. ${producto.precio}</span>
-        <span class="stock ${producto.stock > 0 ? 'disponible' : 'agotado'}">
-          ${producto.stock > 0 ? 'Disponible' : 'Agotado'}
-        </span>
-        <a class="btn-whatsapp" href="${producto.whatsapp}" target="_blank">Comprar por WhatsApp</a>
-      `;
+                div.innerHTML = `
+                    <img src="../CSS/imagen/${producto.imagen}" alt="${producto.nombre}">
+                    <h3>${producto.nombre}</h3>
+                    <p>${producto.descripcion}</p>
+                    <span>Precio: $${producto.precio}</span>
+                `;
 
-      contenedor.appendChild(card);
-    });
-  });
+                contenedor.appendChild(div);
+            });
+        })
+        .catch(err => console.error("Error al cargar productos:", err));
+});
