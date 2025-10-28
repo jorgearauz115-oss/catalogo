@@ -1,1 +1,15 @@
+[
+  {
+    "nombre": "Intel Core i5",
+    "descripcion": "6 núcleos y 4.5GHz",
+    "precio": 210,
+    "imagen": "procesador.jpg"
+  },
+  {
+    "nombre": "AMD Ryzen 5",
+    "descripcion": "12 hilos, rendimiento excelente",
+    "precio": 230,
+    "imagen": "procesador.jpg"
+  }
+]
 
