@@ -2,21 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const contenedor = document.getElementById("productos");
 
     fetch("productos.json")
-        .then(response => response.json())
+        .then(res => res.json())
         .then(data => {
             data.forEach(producto => {
-                const card = document.createElement("div");
-                card.classList.add("producto");
+                const div = document.createElement("div");
+                div.classList.add("producto");
 
-                card.innerHTML = `
-                    <img src="../imagen/${producto.imagen}" alt="${producto.nombre}">
+                div.innerHTML = `
+                    <img src="../CSS/imagen/${producto.imagen}" alt="${producto.nombre}">
                     <h3>${producto.nombre}</h3>
                     <p>${producto.descripcion}</p>
                     <span>Precio: $${producto.precio}</span>
                 `;
 
-                contenedor.appendChild(card);
+                contenedor.appendChild(div);
             });
         })
-        .catch(error => console.error("Error cargando productos:", error));
+        .catch(err => console.error("Error al cargar productos:", err));
 });
